@@ -1,0 +1,26 @@
+2018-12-13T14:38:23|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 241, in update_value
+    self.hardware_set_func(self.val)
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 100, in <lambda>
+    write_func = lambda new_vel, n=ax_num: self.gcs.VEL(n, new_vel )
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 2950, in VEL
+    self.__msgs.send(cmdstr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 120, in send
+    self.__checkerror(senderr=not self.__embederr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 278, in __checkerror
+    raise exc  # Raising NoneType while only classes or instances are allowed pylint: disable=E0702
+pipython.gcserror.GCSError: Parameter out of range (17)
+
+2018-12-13T14:38:37|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\logged_quantity.py", line 241, in update_value
+    self.hardware_set_func(self.val)
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 100, in <lambda>
+    write_func = lambda new_vel, n=ax_num: self.gcs.VEL(n, new_vel )
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 2950, in VEL
+    self.__msgs.send(cmdstr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 120, in send
+    self.__checkerror(senderr=not self.__embederr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 278, in __checkerror
+    raise exc  # Raising NoneType while only classes or instances are allowed pylint: disable=E0702
+pipython.gcserror.GCSError: Parameter out of range (17)
+

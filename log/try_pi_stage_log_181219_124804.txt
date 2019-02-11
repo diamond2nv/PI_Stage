@@ -1,0 +1,15 @@
+2018-12-19T12:48:04|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "E:\LabPrograms\Python\PI_stage\try_pi_stage.py", line 30, in <module>
+    app = TryPIStage(sys.argv)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "E:\LabPrograms\Python\PI_stage\try_pi_stage.py", line 17, in setup
+    self.add_hardware(PIStage(self))
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 23, in __init__
+    HardwareComponent.__init__(self, app, debug=debug, name=name)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 80, in __init__
+    self.setup()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 54, in setup
+    self.min_lim = self.add_logged_quantity("min_lim", dtype=float, unit='mm', ro=True, hardware_read_func=self.getMNlim)
+AttributeError: 'PIStage' object has no attribute 'getMNlim'
+

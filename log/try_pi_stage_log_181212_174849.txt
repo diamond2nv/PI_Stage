@@ -1,0 +1,9 @@
+2018-12-12T17:48:52|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW.py", line 64, in connect
+    raise ValueError("Port of undefined type {}".format(S['port']))
+ValueError: Port of undefined type 
+

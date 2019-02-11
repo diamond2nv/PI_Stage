@@ -1,0 +1,9 @@
+2018-12-13T12:45:55|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 62, in connect
+    self.rangemin.hardware_read_func = self.gcs.qTMN().values()[0]
+TypeError: 'odict_values' object does not support indexing
+

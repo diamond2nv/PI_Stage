@@ -1,0 +1,20 @@
+2018-12-17T12:02:56|WARNING|LoggedQuantity|x_on_target read_from_hardware called when not connected to hardware
+2018-12-17T12:02:56|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 125, in connect
+    self.update_timer.timeout.connect(self.on_update_timer)
+AttributeError: 'PIStage' object has no attribute 'on_update_timer'
+
+2018-12-17T12:03:28|WARNING|LoggedQuantity|x_on_target read_from_hardware called when not connected to hardware
+2018-12-17T12:03:28|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 125, in connect
+    self.update_timer.timeout.connect(self.on_update_timer)
+AttributeError: 'PIStage' object has no attribute 'on_update_timer'
+

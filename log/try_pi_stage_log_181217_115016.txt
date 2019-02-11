@@ -1,0 +1,9 @@
+2018-12-17T11:50:30|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 219, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 212, in enable_connection
+    self.disconnect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 132, in disconnect
+    file.write(self.gcs.qPOS()['1'])
+TypeError: write() argument must be str, not float
+

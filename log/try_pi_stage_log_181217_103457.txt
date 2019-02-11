@@ -1,0 +1,15 @@
+2018-12-17T10:35:10|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 69, in connect
+    self.gcs.POS(self.gcs.axes, self.gcs.qTSP()['1'])
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 2413, in qTSP
+    answer = self.__msgs.read(cmdstr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 139, in read
+    answer = self.__read(stopon)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 175, in __read
+    raise GCSError(gcserror.E_7_COM_TIMEOUT)
+pipython.gcserror.GCSError: Timeout error (-7)
+

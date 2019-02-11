@@ -1,0 +1,9 @@
+2018-12-19T15:08:23|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 219, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 212, in enable_connection
+    self.disconnect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 134, in disconnect
+    print(list(self.gcs.IsMoving(self.gcs.axes))[1])
+IndexError: list index out of range
+

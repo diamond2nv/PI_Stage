@@ -1,0 +1,45 @@
+2018-12-19T14:34:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 92, in connect
+    print(self.gcs.qSSL(self.gcs.axes))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 5403, in qSSL
+    answer = self.__msgs.read(cmdstr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 139, in read
+    answer = self.__read(stopon)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 175, in __read
+    raise GCSError(gcserror.E_7_COM_TIMEOUT)
+pipython.gcserror.GCSError: Timeout error (-7)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 219, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 212, in enable_connection
+    self.disconnect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 146, in disconnect
+    self.gcs.IsMoving(self.gcs.axes)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 1324, in IsMoving
+    answer = self.__msgs.read(chr(5))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 155, in read
+    self.__checkerror()
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 278, in __checkerror
+    raise exc  # Raising NoneType while only classes or instances are allowed pylint: disable=E0702
+pipython.gcserror.GCSError: Unknown command (2)
+
+2018-12-19T14:34:26|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 92, in connect
+    print(self.gcs.qSSL(self.gcs.axes))
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcscommands.py", line 5403, in qSSL
+    answer = self.__msgs.read(cmdstr)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 139, in read
+    answer = self.__read(stopon)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsmessages.py", line 175, in __read
+    raise GCSError(gcserror.E_7_COM_TIMEOUT)
+pipython.gcserror.GCSError: Timeout error (-7)
+

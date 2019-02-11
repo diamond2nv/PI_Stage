@@ -1,0 +1,1 @@
+2018-12-13T15:33:12|WARNING|LoggedQuantity|x_on_target read_from_hardware called when not connected to hardware

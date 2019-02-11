@@ -1,0 +1,15 @@
+2018-12-13T15:56:18|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 208, in enable_connection
+    raise err
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\hardware.py", line 204, in enable_connection
+    self.connect()
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 60, in connect
+    self.gcs = GCSDevice(S.controller)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\gcsdevice.py", line 21, in __init__
+    self.__interface = GCSDll(devname, gcsdll)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\interfaces\gcsdll.py", line 132, in __init__
+    dllname = dllname or get_dll_name(devname)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\pipython-1.3.4.17-py3.6.egg\pipython\interfaces\gcsdll.py", line 47, in get_dll_name
+    if devname.upper() not in ('C-663.11', 'C-863.11', 'C-663.10', 'C-863.10', 'C-663.12'):
+AttributeError: 'LoggedQuantity' object has no attribute 'upper'
+

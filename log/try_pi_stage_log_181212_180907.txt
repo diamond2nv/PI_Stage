@@ -1,0 +1,12 @@
+2018-12-12T18:09:07|CRITICAL|root|Unhandled exception:Traceback (most recent call last):
+  File "E:\LabPrograms\Python\PI_stage\try_pi_stage.py", line 30, in <module>
+    app = TryShutter(sys.argv)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\ScopeFoundry\base_app.py", line 332, in __init__
+    self.setup()
+  File "E:\LabPrograms\Python\PI_stage\try_pi_stage.py", line 16, in setup
+    from pi_stage_HW_test import PIStage
+  File "E:\LabPrograms\Python\PI_stage\pi_stage_HW_test.py", line 62
+    print("done")
+        ^
+IndentationError: expected an indented block
+
